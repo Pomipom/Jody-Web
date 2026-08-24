@@ -1,4 +1,4 @@
-            html, body{
+        html, body{
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -148,361 +148,363 @@
             background-color: rgb(54, 47, 95);
         }
 
-        /*Iconss*/
-       .icons-container{
-        margin-top: 50px;
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-       }
+            /*Iconss*/
+        .icons-container{
+            margin-top: 50px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
        .icons-container a{
         text-decoration: none;
        }
-       .icon-holder{
-        width: 90px;
-        padding: 5px;
-        overflow: hidden;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid transparent;
-        transition: background-color 0.1s, border-color 0.1s;
-        cursor: default;
-       }
-       .icon-holder:hover{
-        background-color: rgba(63, 72, 201, 0.342);
-         border-color: rgba(255, 255, 255, 0.35);
-       }
-       .icon{
-        height: 70px;
-        width: 70px;
-        margin: 0;
-       }
-       .icons-name{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: white;
-        margin-top: 2px;
-        font-size: 14px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        word-break: break-word;
-       }
-       .gif-holder{
-        width: 260px;
-        height: 260px;
-        display: flex;
-        top: 20;
-        left: 50;
-        right: 60;
-       }
-
-       .browser-window{
-        display: none;
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        width: 60%;
-        height: 60%;
-        background-color: rgb(30, 30, 35);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 8px;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-        z-index: 2000;
-        flex-direction: column;
-        overflow: hidden;
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       }
-       .browser-window:target{
-        display: flex;
-       }
-       .window-header{
-        background-color: rgb(63, 63, 138);
-        padding: 8px 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255,0.1);
-        user-select: none;
-       }
-       .window-title{
-        font-size: 13px;
-        font-weight: 500;
-       }
-       .close-btn{
-        text-decoration: none;
-        color: #ff5f56;
-        font-size: 10px;
-        font-weight: bold;
-        transition: color 0.2s;
-        border: 2px solid tomato;
-        padding: 2px 4px;
-       }
-       .close-btn:hover{
-        color: #ff3b30;
-        border: 2px solid #ff3b30;
-       }
-       .window-content{
-        padding: 20px;
-        flex: 1;
-        overflow-y: auto;
-        background-color: rgb(25,25,30);
-       }
-       .window-heading{
-        text-align: center;
-       }
-
-
-       /*About Window COntent*/
-       #abt-content{
-       /* background-color: rgb(255, 206, 214);*/
-       background: url(abt-bg.jpg);
-        color: rgb(141, 88, 88);
-       }
-       .abt-container{
-        margin: 5%;
-       }
-       .profile-holder{
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        transition: 0.2s ease-in;
-       }
-       .profile-holder:hover{
-        transform: scale(1.1);
-       }
-       .profile-pic{
-        height: auto;
-        width: 100%;
-        max-width: 260px;
-        border-radius: 24px;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-       }
-       .abt-top{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-       }
-       .abt-info{
-        margin: 0;
-        font-weight: 500;
-        font-size: 18px;
-        flex: 1;
-       }
-       .abt-info a{
-        color: rgb(141, 88, 88);
-       }
-       .abt-likes-hobbies{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-       }
-       .foods-container{
-        margin: 20px 0;
-        font-size: 18px;
-        width: 100%;
-        box-sizing: border-box;
-       }
-       .foods{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-        width: 100%;
-       }
-       .foods-card img{
-        height: 200px;
-        width: 200px;
-        max-width: 100%;
-        border-radius: 50%;
-        transition: 0.5s ease-in-out;
-        object-fit: cover;
-       }
-       .foods-card img:hover{
-        transform: scale(1.1);
-       }
-       .foods-card p{
-        text-align: center;
-        font-weight: 500;
-       }
-       .footer-info{
-        color: brown;
-        text-align: center;
-        font-weight: 500;
-        margin-top: 85px;
-       }
-       
-
-       /*Gallery Window COnTent*/
-       #gallery-content{
-        background: url(gallery-bgg.jpg) center/cover no-repeat;
-       }
-       #gallery-window-heading{
-        color: rgb(93, 165, 147);
-       }
-       .gallery-container{
-        margin: 10px auto;
-       }
-       .gallery{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
-        gap: 25px;
-        margin: 5%;
-       }
-       .gallery-card{
-        width:100%;
-        height: auto;
-        max-width: 200px;
-        object-fit: contain;
-        padding: 5px 4px 8px 4px;
-        border: 1px solid hwb(225 92% 0%);
-        background-color: hwb(223 94% 0%);
-        box-shadow: 0 4px 8px rgba(64, 65, 69, 0.546);
-        transition: 0.4s ease-in-out;
-        transform: rotate(-2deg);
-       }
-       .gallery-card:hover{
-        transform: scale(1.1);
-        transform: rotate(3deg);
-       }
-       .gallery-card img{
-        width: 100%;
-        max-width: 200px;
-       }
-       .gallery-caption{
-        color: black;
-        text-align: center;
-        padding: 3px;
-        margin: 0;
-        font-size: 12px;
-       }
-
-       /*MUSICCCC WINDOW CONTENT*/
-       #music-window{
-        margin: 20px auto;
-       }
-       #music-content{
-        background: url(music-bg.jpg) no-repeat center;
-        background-size: cover;
-        box-sizing: border-box;
-        padding: 10px;
-       }
-       .music-container{
-        background-color: rgba(46, 46, 46, 0.507);
-        padding: 15px;
-        gap: 20px;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 15px auto;
-        box-sizing: border-box;
-        margin: 5%;
-       }
-       .player-info{
-        text-align: center;
-        flex: 1 1 200px;
-        max-width: 220px;
-       }
-       .player-info img{
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-        border-radius: 8px;
-       }
-       .music-list{
-        overflow-y: auto;
-        max-height: 300px;
-        flex: 2 1 280px;
-        margin: 5px;
-        padding: 10px;
-        scrollbar-width: thin;
-        scrollbar-color: rgb(127, 218, 239);
-       }
-       .music{
-        border-bottom: 1px solid grey;
-        padding: 10px;
-       }
-       .song-info{
-        display: flex;
-        gap: 12px;
-       }
-       audio{
-        opacity: 0.5;
-       }
-       .audio-controls{
-        width: 100%;
-        height: 30px;
-        margin-top: 8px;
-       }
-       .track-number{
-        color: rgb(5, 185, 191);
-        font-weight: bold;
-        margin: 5px;
-       }
-       .music-title{
-        color: rgb(192, 255, 247);
-        font-weight: 500;
-        margin: 5px;
-        cursor: default;
-       }
-
-       /*Rec Bin*/
-       #recycle-content{
-        background: url(Glitch\ Glow\ GIF\ by\ Erica\ Anderson.gif);
-       }
-       .recycle-container{
-        display: flex;
-        flex-wrap: wrap;
-       }
-       .gif{
-        height: 200px;
-        margin: 5%;
-       }
-
-       @media (max-width: 480px), (max-width:768px){
-        .desktop-view{
-            margin: 8% 1%;
-        }
-        .menu-bar{
-            top: 0;
-            left: 0;
-            right: 0;
-        }
-        .menu-left{
-            display: none;
-        }
-        .menu-right{
-            margin-top:0;
-            margin-left: 80%;
-            gap: 12px;
-        }
-        .icons-container{
+        .icon-holder{
+            width: 90px;
+            padding: 5px;
+            overflow: hidden;
+            border-radius: 4px;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid transparent;
+            transition: background-color 0.1s, border-color 0.1s;
+            cursor: default;
         }
+        .icon-holder:hover{
+            background-color: rgba(63, 72, 201, 0.342);
+            border-color: rgba(255, 255, 255, 0.35);
+        }
+        .icon{
+            height: 70px;
+            width: 70px;
+            margin: 0;
+        }
+        .icons-name{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            margin-top: 2px;
+            font-size: 14px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            word-break: break-word;
+        }
+        .gif-holder{
+            width: 260px;
+            height: 260px;
+            display: flex;
+            top: 20;
+            left: 50;
+            right: 60;
+        }
+
         .browser-window{
-            height: 100%;
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            width: 60%;
+            height: 60%;
+            background-color: rgb(30, 30, 35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            flex-direction: column;
+            overflow: hidden;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .browser-window:target{
+            display: flex;
+        }
+        .window-header{
+            background-color: rgb(63, 63, 138);
+            padding: 8px 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255,0.1);
+            user-select: none;
+        }
+        .window-title{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .close-btn{
+            text-decoration: none;
+            color: #ff5f56;
+            font-size: 10px;
+            font-weight: bold;
+            transition: color 0.2s;
+            border: 2px solid tomato;
+            padding: 2px 4px;
+        }
+        .close-btn:hover{
+            color: #ff3b30;
+            border: 2px solid #ff3b30;
+        }
+        .window-content{
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+            background-color: rgb(25,25,30);
+        }
+        .window-heading{
+            text-align: center;
+        }
+
+
+        /*About Window COntent*/
+        #abt-content{
+        /* background-color: rgb(255, 206, 214);*/
+        background: url(abt-bg.jpg);
+            color: rgb(141, 88, 88);
+        }
+        .abt-container{
+            margin: 5%;
+        }
+        .profile-holder{
+            height: auto;
             width: 100%;
-            top: 0;
-            left: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            transition: 0.2s ease-in;
+        }
+        .profile-holder:hover{
+            transform: scale(1.1);
+        }
+        .profile-pic{
+            height: auto;
+            width: 100%;
+            max-width: 260px;
+            border-radius: 24px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        }
+        .abt-top{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .abt-info{
+            margin: 0;
+            font-weight: 500;
+            font-size: 18px;
+            flex: 1;
+        }
+        .abt-info a{
+            color: rgb(141, 88, 88);
+        }
+        .abt-likes-hobbies{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .foods-container{
+            margin: 20px 0;
+            font-size: 18px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .foods{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            width: 100%;
+        }
+        .foods-card img{
+            height: 200px;
+            width: 200px;
+            max-width: 100%;
+            border-radius: 50%;
+            transition: 0.5s ease-in-out;
+            object-fit: cover;
+        }
+        .foods-card img:hover{
+            transform: scale(1.1);
+        }
+        .foods-card p{
+            text-align: center;
+            font-weight: 500;
+        }
+        .footer-info{
+            color: brown;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 85px;
+        }
+        .footer-info a{
+            color: brown;
+        }
+
+        /*Gallery Window ConTent*/
+        #gallery-content{
+            background: url(gallery-bgg.jpg) center/cover no-repeat;
+        }
+        #gallery-window-heading{
+            color: rgb(93, 165, 147);
+        }
+        .gallery-container{
+            margin: 10px auto;
         }
         .gallery{
             display: grid;
-            margin: 0 auto;
-            padding: 5% 15%;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
+            gap: 25px;
+            margin: 5%;
         }
-        #music-window{
+        .gallery-card{
+            width:100%;
+            height: auto;
+            max-width: 200px;
+            object-fit: contain;
+            padding: 5px 4px 8px 4px;
+            border: 1px solid hwb(225 92% 0%);
+            background-color: hwb(223 94% 0%);
+            box-shadow: 0 4px 8px rgba(64, 65, 69, 0.546);
+            transition: 0.4s ease-in-out;
+            transform: rotate(-2deg);
+        }
+        .gallery-card:hover{
+            transform: scale(1.1);
+            transform: rotate(3deg);
+        }
+        .gallery-card img{
+            width: 100%;
+            max-width: 200px;
+        }
+        .gallery-caption{
+            color: black;
+            text-align: center;
+            padding: 3px;
             margin: 0;
+            font-size: 12px;
+        }
+
+        /*MUSICCCC WINDOW CONTENT*/
+        #music-window{
+            margin: 20px auto;
+        }
+        #music-content{
+            background: url(music-bg.jpg) no-repeat center;
+            background-size: cover;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .music-container{
+            background-color: rgba(46, 46, 46, 0.507);
+            padding: 15px;
+            gap: 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 15px auto;
+            box-sizing: border-box;
+            margin: 5%;
+        }
+        .player-info{
+            text-align: center;
+            flex: 1 1 200px;
+            max-width: 220px;
+        }
+        .player-info img{
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
         }
         .music-list{
-            max-height: 100%;
+            overflow-y: auto;
+            max-height: 300px;
+            flex: 2 1 280px;
+            margin: 5px;
+            padding: 10px;
+            scrollbar-width: thin;
+            scrollbar-color: rgb(127, 218, 239);
         }
-       }
-       
+        .music{
+            border-bottom: 1px solid grey;
+            padding: 10px;
+        }
+        .song-info{
+            display: flex;
+            gap: 12px;
+        }
+        audio{
+            opacity: 0.5;
+        }
+        .audio-controls{
+            width: 100%;
+            height: 30px;
+            margin-top: 8px;
+        }
+        .track-number{
+            color: rgb(5, 185, 191);
+            font-weight: bold;
+            margin: 5px;
+        }
+        .music-title{
+            color: rgb(192, 255, 247);
+            font-weight: 500;
+            margin: 5px;
+            cursor: default;
+        }
+
+        /*Rec Bin*/
+        #recycle-content{
+            background: url(Glitch\ Glow\ GIF\ by\ Erica\ Anderson.gif);
+        }
+        .recycle-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gif{
+            height: 200px;
+            margin: 5%;
+        }
+
+        @media (max-width: 480px), (max-width:768px){
+            .desktop-view{
+                margin: 8% 1%;
+            }
+            .menu-bar{
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            .menu-left{
+                display: none;
+            }
+            .menu-right{
+                margin-top: 0;
+                margin-left: 80%;
+                gap: 12px;
+            }
+            .icons-container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .browser-window{
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+            .gallery{
+                display: grid;
+                margin: 0 auto;
+                padding: 5% 15%;
+            }
+            #music-window{
+                margin: 0;
+            }
+            .music-list{
+                max-height: 100%;
+            }
+        }
+        
