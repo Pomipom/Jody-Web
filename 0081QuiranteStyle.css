@@ -46,7 +46,6 @@
             inset: 0;
             z-index: 1;
             background: url('wallpaper.jpg') center/cover no-repeat;
-            
             filter: blur(10px) saturate(150%);
             -webkit-filter:blur(10px) saturate(150%);
             transform: scale(1.1);
@@ -107,7 +106,7 @@
         /*Menuu Barr*/
          .menu-bar{
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
             height: 30px;
@@ -123,7 +122,7 @@
             font-weight: 500;
             backdrop-filter: blur(40px) saturate(180%);
             -webkit-backdrop-filter: blur(40px) saturate(180%);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+            border-top: 1px solid rgba(255, 255, 255, 0.14);
             box-shadow: 0 1px 24px rgba(0, 0, 0, 0.18);
         }
         .menu-left{
@@ -174,7 +173,6 @@
        .icon-holder:hover{
         background-color: rgba(63, 72, 201, 0.342);
          border-color: rgba(255, 255, 255, 0.35);
-
        }
        .icon{
         height: 70px;
@@ -271,6 +269,10 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
+        transition: 0.2s ease-in;
+       }
+       .profile-holder:hover{
+        transform: scale(1.1);
        }
        .profile-pic{
         height: auto;
@@ -452,3 +454,57 @@
         margin: 5px;
         cursor: default;
        }
+
+       /*Rec Bin*/
+       #recycle-content{
+        background: url(Glitch\ Glow\ GIF\ by\ Erica\ Anderson.gif);
+       }
+       .recycle-container{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .gif{
+        height: 200px;
+        margin: 5%;
+       }
+
+       @media (max-width: 480px){
+        .desktop-view{
+            margin: 8% 1%;
+        }
+        .menu-bar{
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .menu-left{
+            display: none;
+        }
+        .menu-right{
+            margin-left: 80%;
+            gap: 12px;
+        }
+        .icons-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .browser-window{
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .gallery{
+            display: grid;
+            margin: 0 auto;
+            padding: 5% 15%;
+        }
+        #music-window{
+            margin: 0;
+        }
+        .music-list{
+            max-height: 100%;
+        }
+       }
+       
