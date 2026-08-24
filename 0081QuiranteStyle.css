@@ -326,19 +326,7 @@
         text-align: center;
         font-weight: 500;
        }
-       .postcard{
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-        margin: 20px auto;
-        max-width: 280px;
-        width: 100%;
-        float: none;
-       }
-       .postcard img{
-        height: auto;
-        width: 100%;
-        border-radius: 8px;
-        display: block;
-       }
+       
 
        /*Gallery Window COnTent*/
        #gallery-content{
