@@ -468,7 +468,7 @@
         margin: 5%;
        }
 
-       @media (max-width: 480px){
+       @media (max-width: 480px), (max-width:768px){
         .desktop-view{
             margin: 8% 1%;
         }
