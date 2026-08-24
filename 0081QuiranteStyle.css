@@ -293,6 +293,9 @@
         font-size: 18px;
         flex: 1;
        }
+       .abt-info a{
+        color: rgb(141, 88, 88);
+       }
        .abt-likes-hobbies{
         display: flex;
         flex-wrap: wrap;
@@ -325,6 +328,12 @@
        .foods-card p{
         text-align: center;
         font-weight: 500;
+       }
+       .footer-info{
+        color: brown;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 85px;
        }
        
 
