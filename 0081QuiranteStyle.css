@@ -481,7 +481,8 @@
             display: none;
         }
         .menu-right{
-            margin-left: 80%;
+            margin-top:0;
+            margin-left: 75%;
             gap: 12px;
         }
         .icons-container{
